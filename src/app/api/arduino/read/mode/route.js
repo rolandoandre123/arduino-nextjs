@@ -11,9 +11,5 @@ export async function GET() {
 
   console.log("mode="+data.value);
   const res = data ?? {};
-  return NextResponse.json(res, {
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-    }
-  });
+  return NextResponse.json(res);
 }
