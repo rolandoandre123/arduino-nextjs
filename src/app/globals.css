@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply pt-[0.1px] min-h-screen bg-slate-950 select-none;
+  }
+}
